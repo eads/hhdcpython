@@ -2,9 +2,11 @@
 
 It's your first week as a newsroom coder. A city reporter needs you to clean and summarize some data. One of your colleagues set up a repository with the dataset and an unfinished Python script with some notes.
 
-## Prerequisities (aka requirements)
+You'll make a fork of your colleague's work using Git, install your copy on PythonAnywhere, then modify it to process the data.
 
-You'll need to sign up with a couple of services:
+## Prerequisities
+
+You'll need to sign up with a couple of services to complete this job:
 
 * [Github](http://github.com)
 * [Python Anywhere](http://pythonanywhere.com)
@@ -35,10 +37,3 @@ Create bash session
 Clone repo
 
 {SCREENSHOT OF CLONING REPO}
-
-
-
-
-
-
-
