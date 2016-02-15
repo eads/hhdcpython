@@ -11,7 +11,7 @@ You'll need to sign up with a couple of services:
 
 ## Getting set up for the first time
 
-At least your charmingly cryptic co-worker Dave left you a place to start. 
+At least your charmingly cryptic co-worker David left you a place to start. Of course, he was only following the practices established for any small data project at your company. 
 
 ### Fork the code
 
