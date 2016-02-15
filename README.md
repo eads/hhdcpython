@@ -41,9 +41,9 @@ The first screen is the "Consoles" tab. Under the "Start a new console" section 
 
 This creates a basic terminal session where you can run and manage code.
 
-{SCREENSHOT OF CREATING BASH SESSION}
+![Animation of creating a bash console](img/clone.gif)
 
-Once you a prompt that looks like `11:11 ~ $`, you're ready to start typing in commands. Now it's time to get your copy of the code. Type the following into the terminal on your screen:
+Once you see a prompt that looks like `03:11 ~ $`, you're ready to start typing in commands. Now it's time to get your copy of the code. Type the following into the terminal on your screen:
 
 ```
 git clone https://github.com/<MYGITHUBUSERNAME>/hhdcpython
@@ -55,4 +55,10 @@ Note that you **must** replace `<MYGITHUBUSERNAME>` with your Github username.
 
 ## Editing and running the script
 
-Click the "Files" tab.
+* Click the "Files" tab. 
+* Click the `hhdcpython` directory on the left side of the screen.
+* Click the `process.py` file on the right hand side of the screen.
+
+A file editor will appear. You can now edit or 
+
+
