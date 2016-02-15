@@ -44,6 +44,7 @@ if __name__ == '__main__':
     output = process_data()
 
     # Print the `output` variable.
+    print('Value of `output` variable:')
     print(output)
 
     # Print that we're done.
