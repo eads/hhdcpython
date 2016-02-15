@@ -6,8 +6,8 @@ It's your first week as a newsroom coder. A city reporter needs you to clean and
 
 You'll need to sign up with a couple of services:
 
-* [Github](http://github.com)
-* [Python Anywhere](http://pythonanywhere.com)
+* [Github](https://github.com)
+* [Python Anywhere](https://pythonanywhere.com)
 
 ## Getting set up for the first time
 
@@ -15,20 +15,21 @@ At least your charmingly cryptic co-worker David left you a place to start: A gi
 
 Of course, he was only following the practices established for any small data project at your company. 
 
-
 ### Fork the code
 
 Forking is a way of making your own version of someone else's code, usually because you want to improve it or modify it for your own purposes. At our company, you should always fork before you work on a project.
 
 [Fork the repository for the class project](https://github.com/eads/hhdcpython#fork-destination-box) so you have your own copy of the code to hack on.
 
-{FORKING SCREENSHOTS/GIF}
+{SCREENSHOT OF FORKING}
 
 (You might think it's weird to digress into Git and version control so quickly. But this tutorial is meant to mimic a professional setting, and you're going to struggle a bit with version control in a professional setting.)
 
 ### Install the code on PythonAnywhere
 
-Create bash session
+Log in to [Python Anywhere](https://pythonanywhere.com).
+
+
 
 {SCREENSHOT OF CREATING BASH SESSION}
 
