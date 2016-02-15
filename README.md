@@ -29,7 +29,7 @@ Forking is a way of making your own version of someone else's code, usually beca
 
 [Fork the repository for the class project](https://github.com/eads/hhdcpython#fork-destination-box) so you have your own copy of the code to hack on.
 
-{SCREENSHOT OF FORKING}
+![Animation of forking a repository](img/forking.gif)
 
 (You might think it's weird to digress into Git and version control so quickly. But this tutorial is meant to mimic a professional setting, and you're going to struggle a bit with version control in a professional setting.)
 
