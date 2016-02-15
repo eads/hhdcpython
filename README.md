@@ -15,7 +15,7 @@ You'll need to sign up with a couple of services to complete this job:
 
 At least your charmingly cryptic co-worker David left you a place to start: A git repository with some data and the bones of a script to process it.
 
-Of course, he was only following the practices established for any small data project at your company. 
+Of course, David was only following the practices established for any small data project at your company. 
 
 ### Fork the code
 
