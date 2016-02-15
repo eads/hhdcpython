@@ -15,11 +15,18 @@ At least your charmingly cryptic co-worker David left you a place to start. Of c
 
 ### Fork the code
 
-Forking is a way of making your own version of someone else's code, usually because you want to improve it or modify it for your own purposes.
+Forking is a way of making your own version of someone else's code, usually because you want to improve it or modify it for your own purposes. At our company, you should always fork before you work on a project.
 
-[Fork the class repository](https://github.com/eads/hhdcpython#fork-destination-box) so you have your own copy of the code to hack on.
+[Fork the repository for the class project](https://github.com/eads/hhdcpython#fork-destination-box) so you have your own copy of the code to hack on.
 
 (You might think it's weird to digress into Git and version control so quickly. But this tutorial is meant to mimic a professional setting, and you're going to struggle a bit with version control in a professional setting.)
+
+### Install the code on PythonAnywhere
+
+* Create bash session
+* Clone repo
+
+
 
 
 
