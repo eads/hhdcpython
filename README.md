@@ -1,1 +1,1 @@
-# hhdc-python
+# Hacks/Hackers DC Python class notes
