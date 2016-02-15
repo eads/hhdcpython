@@ -17,7 +17,6 @@ At least your charmingly cryptic co-worker David left you a place to start: A gi
 
 Of course, he was only following the practices established for any small data project at your company. 
 
-
 ### Fork the code
 
 Forking is a way of making your own version of someone else's code, usually because you want to improve it or modify it for your own purposes. At our company, you should always fork before you work on a project.
