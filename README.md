@@ -11,7 +11,10 @@ You'll need to sign up with a couple of services:
 
 ## Getting set up for the first time
 
-At least your charmingly cryptic co-worker David left you a place to start. Of course, he was only following the practices established for any small data project at your company. 
+At least your charmingly cryptic co-worker David left you a place to start: A git repository with some data and the bones of a script to process it.
+
+Of course, he was only following the practices established for any small data project at your company. 
+
 
 ### Fork the code
 
@@ -19,12 +22,21 @@ Forking is a way of making your own version of someone else's code, usually beca
 
 [Fork the repository for the class project](https://github.com/eads/hhdcpython#fork-destination-box) so you have your own copy of the code to hack on.
 
+{FORKING SCREENSHOTS/GIF}
+
 (You might think it's weird to digress into Git and version control so quickly. But this tutorial is meant to mimic a professional setting, and you're going to struggle a bit with version control in a professional setting.)
 
 ### Install the code on PythonAnywhere
 
-* Create bash session
-* Clone repo
+Create bash session
+
+{SCREENSHOT OF CREATING BASH SESSION}
+
+Clone repo
+
+{SCREENSHOT OF CLONING REPO}
+
+
 
 
 
