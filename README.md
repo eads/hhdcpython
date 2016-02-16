@@ -61,4 +61,6 @@ Note that you **must** replace `<MYGITHUBUSERNAME>` with your Github username.
 
 A file editor will appear. You can now edit and run the script.
 
+![Animation of editing and running](img/edit-and-run.gif)
+
 Try running it now. We'll walk through editing the script and processing the data when we meet.
