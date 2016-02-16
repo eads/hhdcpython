@@ -53,6 +53,7 @@ Note that you **must** replace `<MYGITHUBUSERNAME>` with your Github username.
 
 ## Editing and running the script
 
+* If you are in a console, click the "Python Anywhere" logo in the upper left to go back to the main screen.
 * Click the "Files" tab.
 * Click the `hhdcpython` directory on the left side of the screen.
 * Click the `process.py` file on the right hand side of the screen.
