@@ -41,8 +41,6 @@ The first screen is the "Consoles" tab. Under the "Start a new console" section 
 
 This creates a basic terminal session where you can run and manage code.
 
-![Animation of creating a bash console](img/clone.gif)
-
 Once you see a prompt that looks like `03:11 ~ $`, you're ready to start typing in commands. Now it's time to get your copy of the code. Type the following into the terminal on your screen:
 
 ```
@@ -51,7 +49,7 @@ git clone https://github.com/<MYGITHUBUSERNAME>/hhdcpython
 
 Note that you **must** replace `<MYGITHUBUSERNAME>` with your Github username.
 
-{SCREENSHOT OF CLONING REPO}
+![Animation of creating a bash console](img/clone.gif)
 
 ## Editing and running the script
 
