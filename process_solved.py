@@ -38,8 +38,8 @@ def process_data():
 
         if line.startswith('SGAR'):
             identifier, church = line.split(' ', 1)
+            church = church.replace('"', '')
             church = church.title()
-            church = church.replace('Ñ', 'ñ')
 
         elif not any([
                 line == 'www.asociacionesreligiosas.gob.mx',
@@ -50,9 +50,7 @@ def process_data():
                 line.isdigit()
             ]):
 
-            line = line.replace('"', '')
             line = line.title()
-            line = line.replace('Ñ', 'ñ')
 
             new_row = [line, church, identifier]
             output_list.append(new_row)
