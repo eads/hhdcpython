@@ -15,7 +15,7 @@ By the end, you'll produce a clean CSV version of the data you can share with th
 You'll need to sign up with a couple of services to complete this job:
 
 * [Github](https://github.com)
-* [Python Anywhere](https://www.pythonanywhere.com)
+* [Python Anywhere](https://www.pythonanywhere.com) (create a beginner account)
 
 ## Getting set up for the first time
 
