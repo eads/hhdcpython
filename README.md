@@ -15,7 +15,7 @@ By the end, you'll produce a clean CSV version of the data you can share with th
 You'll need to sign up with a couple of services to complete this job:
 
 * [Github](https://github.com)
-* [Python Anywhere](https://pythonanywhere.com)
+* [Python Anywhere](https://www.pythonanywhere.com)
 
 ## Getting set up for the first time
 
@@ -35,7 +35,7 @@ Forking is a way of making your own version of someone else's code, usually beca
 
 ### Install the code on PythonAnywhere
 
-Log in to [Python Anywhere](https://pythonanywhere.com).
+Log in to [Python Anywhere](https://www.pythonanywhere.com).
 
 The first screen is the "Consoles" tab. Under the "Start a new console" section at the top of the page, click "Bash".
 
