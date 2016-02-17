@@ -14,6 +14,8 @@ A reporter at your publication would like you to clean up some data for a story 
 
 The good news is that Mexican government has collects and releases data about known religious groups. The not-so-good news is that instead of a friendly CSV file that you could import into Excel, the data is locked up in a [1,964 page PDF document](http://www.asociacionesreligiosas.gob.mx//work/models/AsociacionesReligiosas/pdf/Numeralia/MC_por_SGAR.pdf).
 
+The data includes the name of each religion followed by names of known members of the group. 
+
 You could try to copy and paste and manually clean up the data, but that's a lot of work. Who wants to do a lot of work? More importantly, you'll have even *more* work if you make a mistake, and if the government releases a new list, you'll have more work still. But if you write some code to clean the data, you can repeatedly process the data. With a little code, mistakes are no longer time-killers. If new data is released, you can simply swap out the old data for the new and re-run your analysis.
 
 ## The starting point
@@ -23,6 +25,39 @@ Your colleague David started working on the project using the team's data proces
 _**Note:** If this were a true front-to-back exercise, we'd store the data outside of the git repository and write code to download the PDF and extract the text using a utility like `pdftotext`. Because PythonAnywhere has some significant processing limits for free accounts, I've done this for you and trimmed the dataset from 1,964 pages to 25._
 
 To get started, you should study the [source PDF](http://www.asociacionesreligiosas.gob.mx//work/models/AsociacionesReligiosas/pdf/Numeralia/MC_por_SGAR.pdf) and the lightly processed [text file](data/MC_por_SGAR-trimmed.txt) that will be used in your script.
+
+## From messy input to clean output
+
+You have input data that looks like this:
+
+```
+SGAR/2:3/13 OBRA DE CLERIGOS EN AYUDA SOLIDARIA
+Nombre Completo
+ADALBERTO SANDOVAL ACEVEDO
+
+Total
+4
+
+JESUS CARLOS CABRERO ROMERO
+OSCAR FLORES RAMIREZ
+OSCAR ROBERTO DOMINGUEZ COUTTOLENC
+```
+
+Yup, that's messy. But a reasonable output format is fairly clear. You probably want it to look something like:
+
+```
+Obra de Clerigos en Ayuda Solidaria, Adalberto Sandoval Acevedo
+Obra de Clerigos en Ayuda Solidaria, Jesus Carlos Cabrero Romero
+Obra de Clerigos en Ayuda Solidaria, Oscar Flores Ramirez
+Obra de Clerigos en Ayuda Solidaria, Oscar Roberto Dominguez Couttolenc
+...
+```
+
+Or, to write it more generally:
+
+```
+<Clean church name>, <Clean member name>
+```
 
 ---
 
