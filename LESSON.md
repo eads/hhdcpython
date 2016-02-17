@@ -21,3 +21,36 @@ You could try to copy and paste and manually clean up the data, but that's a lot
 Your colleague David started working on the project using the team's data processing template. The code and data is in a git repo that you've forked and installed on Python Anywhere.
 
 **Note:** If this were a true front-to-back exercise, we'd store the data outside of the git repository and write code to download the PDF and extract the text using a utility like `pdftotext`. Because PythonAnywhere has some significant processing limits for free accounts, I've done this for you and trimmed the dataset from 1,964 pages to 25. 
+
+To get started, you should study the [source PDF](http://www.asociacionesreligiosas.gob.mx//work/models/AsociacionesReligiosas/pdf/Numeralia/MC_por_SGAR.pdf) and the lightly processed [text file](data/MC_por_SGAR-trimmed.txt) that will be used in your script.
+
+---
+
+**Warning:** The rest of the lesson will be covered in person. If you are attending the Hacks/Hackers DC meetup, please stop here. If you can't make it, rock on!
+
+## Writing some pseudo-code
+
+First, find a partner to work with. Pair programming is, paradoxically, often more efficient than working in isolation. 
+
+Hopefully, you've carefully studied the [source data](data/MC_por_SGAR-trimmed.txt). 
+
+Now, get out that highly advanced technology called paper and pen (a word processor will work too) and write down human-language instructions about how you would process the data. Think about how you would explain it to someone who had to do it by hand.
+
+For this data set, there's some gunk at the top of the file that comes from the PDF header:
+
+```
+DIRECTORIO DE MINISTROS DE CULTO
+POR CLAVE DE REGISTRO SGAR
+
+12/02/2016
+Total: 76210
+
+Dirección General de
+Asociaciones Religiosas
+
+```
+
+Hey, there's step 1 of your instructions: Skip the gunk at the top.
+
+Since you need to be very clear in your instructions, you should put a finer point on it: Skip the first 9 lines of the file.
+
