@@ -79,6 +79,10 @@ Hopefully, you've carefully studied the [source data](data/MC_por_SGAR-trimmed.t
 
 Now, get out that highly advanced technology called paper and pen (a word processor will work too) and write down human-language instructions about how you would process the data. Think about how you would explain it to someone who had to do it by hand.
 
+Before reading further, take 15 minutes to write down how you'd process and clean the data. 
+
+Got it? Great. Read on to see how I tackled the problem.
+
 ### Step 0
 
 "Open" the file. For a human, that means just looking at it. You'll worry about how a machine opens the file when you get to the code.
