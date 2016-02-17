@@ -4,6 +4,10 @@ This exercise is meant to be as similar to a real world data cleaning task as po
 
 I've had to take just a few shortcuts due to some limitations of Python Anywhere, which I will note throughout the lesson. 
 
+What seems like the biggest shortcut -- I prepared the skeleton of the code for you already -- isn't a shortcut in the real world at all. I *always* start data projects with a data processing template. I often develop it to a point I can pass it off to another developer who can handle the task but shouldn't have to worry about weird system and Python quirks. 
+
+If you need to do this kind of work, you're probably going to be spending a lot of time studying and modifying other people's code.
+
 ## The problem
 
 A reporter at your publication would like you to clean up some data for a story about fringe religious groups in Mexico. She doesn't need anything fancy, just an overall count of the number of groups in the country and a count of the number of members per group.
