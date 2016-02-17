@@ -2,7 +2,7 @@
 
 This exercise is meant to be as similar to a real world data cleaning task as possible. That means that in addition to writing some Python code, you'll be doing some command line work and using Git. 
 
-I've had to take just a few shortcuts due to some limitations of Python Anywhere, which I will note throughout the lesson. 
+I've had to take just one shortcut due to some limitations of PythonAnywhere, which I will note in the lesson. 
 
 What seems like the biggest shortcut -- I prepared the skeleton of the code for you already -- isn't a shortcut in the real world at all. I *always* start data projects with a data processing template. I often develop it to a point I can pass it off to another developer who can handle the task but shouldn't have to worry about weird system and Python quirks. 
 
@@ -18,9 +18,9 @@ You could try to copy and paste and manually clean up the data, but that's a lot
 
 ## The starting point
 
-Your colleague David started working on the project using the team's data processing template. The code and data is in a git repo that you've forked and installed on Python Anywhere.
+Your colleague David started working on the project using the team's data processing template. The code and data is in a git repo that you've forked and installed on PythonAnywhere.
 
-**Note:** If this were a true front-to-back exercise, we'd store the data outside of the git repository and write code to download the PDF and extract the text using a utility like `pdftotext`. Because PythonAnywhere has some significant processing limits for free accounts, I've done this for you and trimmed the dataset from 1,964 pages to 25. 
+_**Note:** If this were a true front-to-back exercise, we'd store the data outside of the git repository and write code to download the PDF and extract the text using a utility like `pdftotext`. Because PythonAnywhere has some significant processing limits for free accounts, I've done this for you and trimmed the dataset from 1,964 pages to 25._
 
 To get started, you should study the [source PDF](http://www.asociacionesreligiosas.gob.mx//work/models/AsociacionesReligiosas/pdf/Numeralia/MC_por_SGAR.pdf) and the lightly processed [text file](data/MC_por_SGAR-trimmed.txt) that will be used in your script.
 
