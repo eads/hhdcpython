@@ -65,6 +65,8 @@ This is what you hope to take to your colleague before her filing deadline.
 
 ---
 
+## Hold me back!
+
 **Warning:** The rest of the lesson will be covered in person. If you are attending the Hacks/Hackers DC meetup, please stop here. If you can't make it, rock on!
 
 ---
