@@ -6,7 +6,7 @@ I've had to take just one shortcut due to some limitations of PythonAnywhere, wh
 
 What seems like the biggest shortcut -- I prepared the skeleton of the code for you already -- isn't a shortcut in the real world at all. I *always* start data projects with a data processing template. I often develop it to a point I can pass it off to another developer who can handle the task but shouldn't have to worry about weird system and Python quirks. 
 
-If you need to do this kind of work, you're probably going to be spending a lot of time studying and modifying other people's code.
+If you need to do this kind of work, you're probably going to be spending a lot of time studying and modifying other people's code. Pattern recognition is the name of the game here. You'll need to recognize the patterns in the data in order to clean it up. And you'll need to recognize patterns in code in order to modify it to suit your needs.
 
 ## The problem
 
