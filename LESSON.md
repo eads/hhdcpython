@@ -2,7 +2,7 @@
 
 This exercise is meant to be as similar to a real world data cleaning task as possible. That means that in addition to writing some Python code, you'll be doing some command line work and using Git. 
 
-I've had to take just one shortcut due to some limitations of PythonAnywhere, which I will note in the lesson. 
+I had to take one shortcut due to some limitations of PythonAnywhere, which I will note in the lesson. 
 
 What seems like the biggest shortcut -- I prepared the skeleton of the code for you already -- isn't a shortcut in the real world at all. I *always* start data projects with a data processing template. I often develop it to a point I can pass it off to another developer who can handle the task but shouldn't have to worry about weird system and Python quirks. 
 
