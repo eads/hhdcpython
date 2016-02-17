@@ -18,3 +18,6 @@ You could try to copy and paste and manually clean up the data, but that's a lot
 
 ## The starting point
 
+Your colleague David started working on the project using the team's data processing template. The code and data is in a git repo that you've forked and installed on Python Anywhere.
+
+**Note:** If this were a true front-to-back exercise, we'd store the data outside of the git repository and write code to download the PDF and extract the text using a utility like `pdftotext`. Because PythonAnywhere has some significant processing limits for free accounts, I've done this for you and trimmed the dataset from 1,964 pages to 25. 
