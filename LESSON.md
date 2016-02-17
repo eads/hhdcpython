@@ -36,6 +36,14 @@ Hopefully, you've carefully studied the [source data](data/MC_por_SGAR-trimmed.t
 
 Now, get out that highly advanced technology called paper and pen (a word processor will work too) and write down human-language instructions about how you would process the data. Think about how you would explain it to someone who had to do it by hand.
 
+### Step 0
+
+"Open" the file. For a human, that means just looking at it. You'll worry about how a machine opens the file when you get to the code.
+
+* **Step 0:** Open the file.
+
+### Step 1
+
 For this data set, there's some gunk at the top of the file that comes from the PDF header:
 
 ```
@@ -54,4 +62,12 @@ Hey, there's step 1 of your instructions: Skip the gunk at the top.
 
 Since you need to be very clear in your instructions, you should put a finer point on it: Skip the first 9 lines of the file.
 
-* **Step 1:** Skip the first 9 lines of the file
+* **Step 0:** Open the file.
+* **Step 1:** Skip the first 9 lines of the file.
+
+### Step 2
+
+Now that you've written instructions to open the file and skip the first 9 lines, it seems like it's about time to start cleaning up the data. But not so fast! First, you need to make sure the instructions specify a place to put the cleaned data. 
+* **Step 0:** Open the file.
+* **Step 1:** Skip the first 9 lines of the file.
+* **Step 2:** Prepare a place to write down the clean data.
