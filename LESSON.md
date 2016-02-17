@@ -43,7 +43,9 @@ OSCAR FLORES RAMIREZ
 OSCAR ROBERTO DOMINGUEZ COUTTOLENC
 ```
 
-Yup, that's messy. But a reasonable output format is fairly clear. You probably want it to look something like:
+Yup, that's messy. But there's a pattern to it: The name of the church, a list of names, and some gunk you'll need to filter out.
+
+A reasonable output format is fairly clear. You probably want it to look something like:
 
 ```
 Obra de Clerigos en Ayuda Solidaria, Adalberto Sandoval Acevedo
@@ -58,6 +60,8 @@ Or, to write it more generally:
 ```
 <Clean church name>, <Clean member name>
 ```
+
+This is what you hope to take to your colleague before her filing deadline.
 
 ---
 
