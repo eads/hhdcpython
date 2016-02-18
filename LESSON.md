@@ -448,8 +448,21 @@ That leaves step 3, where the real action happens. Before you dig in, might as w
 
 If you said "the same dang thing but without the first nine lines" then you're absolutely correct! 
 
-*Note*: As I write code, I tend to make these sorts of small changes, think about what I expect to see in the output, and then run the program to make sure the output is in fact what I expected. If it isn't, then either my expectation is wrong or my code is wrong -- and it's usually my code. Running your code early, often, comparing what you expect with what actually happens is a nice recipe for learning quickly and writing solid, mistake-free code.
+As I write code, I tend to make these sorts of small changes, think about what I expect to see in the output, and then run the program to make sure the output is in fact what I expected. If it isn't, then either my expectation is wrong or my code is wrong -- and it's usually my code. Running your code early, often, comparing what you expect with what actually happens is a nice recipe for learning quickly and writing solid, mistake-free code.
 
+On to step 3, or at least a first pass at it!
 
+Maybe you understand the `line.strip()` line, maybe you don't. But it seems important so you should probably keep it. You should take a moment to understand it, though, because it pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
+
+```
+    for line in trimmed_data:
+
+        # Remove any whitespace characters from beginning and end of line
+        line = line.strip()
+
+        # If the line is not empty, add it to the output
+        if line != '':
+            output_list.append(line)
+```
 
 
