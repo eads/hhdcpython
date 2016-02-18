@@ -201,7 +201,7 @@ Let's put it together into detailed instructions:
 * **Step 1:** Skip the first 9 lines of the file.
 * **Step 2:** Prepare a place to write down the clean data.
 * **Step 3:** Read the file, line by line:
-    * If the line starts with SGAR, write down the name after the first space as the current religious group.
+    * If the line starts with SGAR, write down the name after the first space as the current religious group. Take care to fix the capitalization of the group's name so it is more readable.
     * Skip the line if it:
         * Says 'Total'.
         * Says 'Nombre completo'.
@@ -209,7 +209,7 @@ Let's put it together into detailed instructions:
         * Starts with 'Pàgina'.
         * Is a number.
         * Is blank.
-    * Otherwise, write down the current line and the current religious group on the clean data sheet.
+    * Otherwise, write down the current line and the current religious group on the clean data sheet. Take care to fix the capitalization of the name so it is more readable.
 
 ### Step 4
 
@@ -219,7 +219,7 @@ It might seem obvious, but the final step is to give back the cleaned data. You 
 * **Step 1:** Skip the first 9 lines of the file.
 * **Step 2:** Prepare a place to write down the clean data.
 * **Step 3:** Read the file, line by line:
-    * If the line starts with SGAR, write down the name after the first space as the current religious group.
+    * If the line starts with SGAR, write down the name after the first space as the current religious group. Take care to fix the capitalization of the group's name so it is more readable.
     * Skip the line if it:
         * Says 'Total'.
         * Says 'Nombre completo'.
@@ -227,9 +227,11 @@ It might seem obvious, but the final step is to give back the cleaned data. You 
         * Starts with 'Pàgina'.
         * Is a number.
         * Is blank.
-    * Otherwise, write down the current line and the current religious group on the clean data sheet.
+    * Otherwise, write down the current line and the current religious group on the clean data sheet. Take care to fix the capitalization of the name so it is more readable.
 * **Step 4:** Return the cleaned data.
 
+## Turning it into code
 
-  
+At this point, you have what programmers call "pseudo code". It isn't real code, but it does systematically describe the process your program needs to use. That's important. Once you know what you're trying to do, it will be a lot easier to ask Google (or your friends and colleagues) for help. 
 
+Eventually, you probably won't need pseudo code when you process data.
