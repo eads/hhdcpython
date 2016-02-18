@@ -272,7 +272,9 @@ The second part, `if __name__ == '__main__':` looks really weird. That's because
 
 But just trust me on this one. Everything indented underneath that line will be executed when you run the script, either via PythonAnywhere's "run" button or from the command line (something we might be able to cover later).
 
-That's why there's a line that reads `output = process()` in that section. It can help to read that line right-to-left. On the right side, you're calling the function called `process()` -- you're asking the little machine to do something for you. On the left side, you're assigning the output of the `process()` function to a variable called `output`. 
+That's why there's a line that reads `output = process()` in that section. It can help to read that line right-to-left. On the right side, you're executing the function called `process()` -- you're asking the little machine to do something for you. On the left side, you're assigning the output of the `process()` function to a variable called `output`. 
+
+A variable is just a way of storing assigning a name to some piece of data. The data could be alphanumeric characters ("Hacks/Hackers DC"), a whole number (50), a decimal number (35.5), a list of multiple pieces of data (["Seattle", "Chicago", "New York City"]). It turns out there are many *types* of data that can be stored with a variable. For this lesson, we'll be mostly worried about *strings* (a sequence of letters and numbers) and *lists* (a way of storing multiple pieces of data).
 
 Just like the function named `process`, you *could* call the variable just about anything you want. But in programming, clarity trumps creativity. (Tangentially, keeping track of stuff that *you* name, versus stuff that is just built-in, is one of the great challenges and confusing parts of programming for newcomers.)
 
@@ -361,4 +363,20 @@ The first significant lines of the function are:
     output_list = list()
 ```
 
-Where have you seen that before? Oh yeah, it was one of the steps in processing the data! Not quite in same order as the pseudo-code, but the first few steps could really be in any order -- just like in real life, it doesn't matter if you open the file before or after you get out a pad of paper to record the cleaned data, it just matters that you do make sure you do both before cleaning the data.
+Hmmm, where have you seen that before? Oh yeah, it was one of the steps in processing the data! Step 2, to be specific. It's not quite in same order as the pseudo-code, but nobody's perfect. 
+
+Really, the first few steps could really be in any order -- just like in real life, it doesn't matter if you open the file before or after you get out a pad of paper to record the cleaned data, it just matters that you make sure you do both before starting to clean the data.
+
+The next few lines correspond nicely to the pseudo-code from earlier as well:
+
+```python
+    # Open the data file
+    with open(HHDC_DATA_FILE) as datafile:
+        data = datafile.read().splitlines()
+```
+
+You don't have to entirely understand what's going on these lines to see that there's I've assigned the contents of the data file to a variable called `data`. Make a mental note of this -- if you want to change the data file, you'll need to remember it -- but move on. You've got a variable called `data` to play with and unless you run into problems, how you got it doesn't matter that much.
+
+
+
+
