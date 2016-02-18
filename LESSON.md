@@ -528,4 +528,20 @@ You're finally in the belly of the data-cleaning beast. If you'll recall, the on
             output_list.append([group_name, identifier, line])
 ```
 
+Now, your code checks to see if the line starts with SGAR. If it does, you'll need to do some processing magic. The `split()` method turns a string into a list but "splitting" on a given character, like a space or comma. The first argument to the method is a separator (`' '` in our case), and the second argument specifies how many times to apply the split before stopping. 
 
+You can try this on one of the lines from the data in a Python console. First try it without the second argument:
+
+```python
+>>> 'SGAR/2/92 CONFERENCIA DEL EPISCOPADO MEXICANO'.split(' ')
+['SGAR/2/92', 'CONFERENCIA', 'DEL', 'EPISCOPADO', 'MEXICANO']
+```
+
+Getting close, but you only want to split the identifier and the name of the religious group, not all the words in the name of the group.
+
+```python
+>>> 'SGAR/2/92 CONFERENCIA DEL EPISCOPADO MEXICANO'.split(' ', 1)
+['SGAR/2/92', 'CONFERENCIA DEL EPISCOPADO MEXICANO']
+```
+
+Perfect! Element 0 of the returned list is the identifer, and element 1 is the name of the religious group. 
