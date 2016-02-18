@@ -377,6 +377,47 @@ The next few lines correspond nicely to the pseudo-code from earlier as well:
 
 You don't have to entirely understand what's going on these lines to see that that I've assigned the contents of the data file to a variable called `data`. Make a mental note of this -- if you want to change the data file, you'll need to remember it -- but move on. You've got a variable called `data` to play with and unless you run into problems, how you got it doesn't matter that much.
 
+Next up is a processing loop that looks at each line of the file, just as the great oracle of pseudo-code predicted:
 
+```
+    # Loop over each line of the data file. Each time the loop runs, the current
+    # line is assigned to a variable called `line`.
+    for line in data:
+
+        # Remove any whitespace characters from beginning and end of line
+        line = line.strip()
+
+        # If the line is not empty, add it to the output
+        if line != '':
+            output_list.append(line)
+```
+
+You'll be digging into this more in just a moment. Clearly, this doesn't do everything you need it to, but it gives you a pattern to start building off.
+
+The last two lines are especially important to understand: If the line is not empty (`!=` is how you saw "not equals" in Python and several other programming languages), then `append` the line to the `output_list` variable defined earlier.
+
+And finally:
+
+```python
+    # Return the processed data
+    return output_list
+```
+
+Excellent! Let's scratch a few items off our list:
+
+* ~~**Step 0:** Open the file.~~
+* **Step 1:** Skip the first 9 lines of the file.
+* ~~**Step 2:** Prepare a place to write down the clean data.~~
+* **Step 3:** Read the file, line by line:
+    * If the line starts with SGAR, write down the name after the first space as the current religious group. Take care to fix the capitalization of the group's name so it is more readable.
+    * Skip the line if it:
+        * Says 'Total'.
+        * Says 'Nombre completo'.
+        * Says 'www.asociacionesreligiosas.gob.mx'.
+        * Starts with 'Pàgina'.
+        * Is a number.
+        * Is blank.
+    * Otherwise, write down the current line and the current religious group on the clean data sheet. Take care to fix the capitalization of the name so it is more readable.
+* ~~**Step 4:** Return the cleaned data.~~
 
 
