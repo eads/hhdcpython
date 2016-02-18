@@ -530,7 +530,9 @@ You're finally in the belly of the data-cleaning beast. If you'll recall, the on
 
 Now, your code checks to see if the line starts with SGAR. If it does, you'll need to do some processing magic. The `split()` method turns a string into a list but "splitting" on a given character, like a space or comma. The first argument to the method is a separator (`' '` in our case), and the second argument specifies how many times to apply the split before stopping. 
 
-You can try this on one of the lines from the data in a Python console. First try it without the second argument:
+---
+
+**Aside**: Splitting can be confusing. If my vague and confusing explanation wasn't sufficient, using an interactive Python console might help. Try splitting one of the lines of the data. First try it without the second argument:
 
 ```python
 >>> 'SGAR/2/92 CONFERENCIA DEL EPISCOPADO MEXICANO'.split(' ')
@@ -545,5 +547,7 @@ Getting close, but you only want to split the identifier and the name of the rel
 ```
 
 Perfect! Element 0 of the returned list is the identifer, and element 1 is the name of the religious group. 
+
+---
 
 Like `strip()`, you'll find yourself using `split()` all the time when doing data cleaning work.
