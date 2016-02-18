@@ -120,4 +120,71 @@ Now that you've written instructions to open the file and skip the first 9 lines
 * **Step 1:** Skip the first 9 lines of the file.
 * **Step 2:** Prepare a place to write down the clean data.
 
-(To be continued)
+### Step 3
+
+This is where things start to get interesting. This isn't a single step as much as a process that needs to be repeated, over and over. 
+
+So, in step 3, your instructions should specify that the person processing the data should read line by line and make some decisions. Let's take a closer look at the data again:
+
+```
+SGAR/2:3/13 OBRA DE CLERIGOS EN AYUDA SOLIDARIA
+Nombre Completo
+ADALBERTO SANDOVAL ACEVEDO
+
+Total
+4
+
+JESUS CARLOS CABRERO ROMERO
+OSCAR FLORES RAMIREZ
+OSCAR ROBERTO DOMINGUEZ COUTTOLENC
+SGAR/2/92 CONFERENCIA DEL EPISCOPADO MEXICANO
+Nombre Completo
+ABELARDO ALVARADO ALCANTARA
+
+Total
+159
+
+ADALBERTO ALMEIDA MERINO
+ADOLFO ANTONIO HERNANDEZ HURTADO
+ADOLFO ANTONIO SUAREZ RIVERA
+ADOLFO M. CASTA?O FONSECA
+ALEJO ZAVALA CASTRO
+ALFONSO CORTES CONTRERAS
+ALFONSO HINOJOSA BERRONES
+ALFONSO HUMBERTO ROBLES COTA
+ANCELMO ZARZA BERNAL
+ANTONIO GONZALEZ SANCHEZ
+ANTONIO ORTEGA FRANCO
+ANTONIO SAHAGUN LOPEZ
+ARTURO A. SZYMANSKI RAMIREZ
+ARTURO LONA REYES
+BENJAMIN CASTILLO PLASCENCIA
+BENJAMIN JIMENEZ HERNANDEZ
+BRAULIO RAFAEL LEON VILLEGAS
+CARLOS AGUIAR RETES
+CARLOS GARFIAS MERLOS
+CARLOS QUINTERO ARCE
+CARLOS SUAREZ CAZARES
+CARLOS TALAVERA RAMIREZ
+CONSTANCIO MIRANDA WECKMANN
+DOMINGO DIAZ MARTINEZ
+EDUARDO CARMONA ORTEGA
+EMILIO CARLOS BERLIE BELAUNZARAN
+ENRIQUE DIAZ DIAZ
+ERNESTO CORRIPIO AHUMADA
+ESTANISLAO ALCARAZ FIGUEROA
+FABIO MARTINEZ CASTILLA
+FAUSTINO ARMENDARIZ JIMENEZ
+FELIPE AGUIRRE FRANCO
+FELIPE ARIZMENDI ESQUIVEL
+
+www.asociacionesreligiosas.gob.mx
+
+Página 1
+```
+
+There are three key patterns in the data to be aware of. 
+
+1. The name of the religious group always precedes the names of the registered members.
+2. The line with the name of the group always starts with the letters `SGAR` followed by some letters, numbers, and a space before the name of the group.
+3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says 
