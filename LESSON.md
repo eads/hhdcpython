@@ -187,11 +187,49 @@ There are three key patterns in the data to be aware of.
 
 1. The name of the religious group always precedes the names of the registered members.
 2. The line with the name of the group always starts with the letters `SGAR` followed by some letters, numbers, and a space before the name of the group.
-3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says "Nombre completo", a line that says "Total", and a line with a number corresponding to the total.
+3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says "Nombre completo", a line that says "Total", empty lines, and a line with a number corresponding to the total.
 
-These patterns pretty much spell out what needs to happen.
+These patterns pretty much spell out what needs to happen. For each line:
 
-* Read each line
-  * If the line starts with SGAR, get the stuff after the space and write it down as the current religious group.
-  * If the line matches any of the junk you identified, skip it.
-  * If none of the conditions above are met, the line must be a name. Write down the name along with the current religious group.
+* If the line starts with SGAR, get the stuff after the space and write it down as the current religious group.
+* If the line matches any of the junk you identified, skip it and move on to the next one.
+* If none of the conditions above are met, the line must be a name. Write down the name along with the current religious group.
+
+Let's put it together into detailed instructions:
+
+* **Step 0:** Open the file.
+* **Step 1:** Skip the first 9 lines of the file.
+* **Step 2:** Prepare a place to write down the clean data.
+* **Step 3:** Read the file, line by line:
+    * If the line starts with SGAR, write down the name after the first space as the current religious group.
+    * Skip the line if it:
+        * Says 'Total'.
+        * Says 'Nombre completo'.
+        * Says 'www.asociacionesreligiosas.gob.mx'.
+        * Starts with 'Pàgina'.
+        * Is a number.
+        * Is blank.
+    * Otherwise, write down the current line and the current religious group on the clean data sheet.
+
+### Step 4
+
+It might seem obvious, but the final step is to give back the cleaned data. You wouldn't want someone to do all that work and then forget to share it with you!
+
+* **Step 0:** Open the file.
+* **Step 1:** Skip the first 9 lines of the file.
+* **Step 2:** Prepare a place to write down the clean data.
+* **Step 3:** Read the file, line by line:
+    * If the line starts with SGAR, write down the name after the first space as the current religious group.
+    * Skip the line if it:
+        * Says 'Total'.
+        * Says 'Nombre completo'.
+        * Says 'www.asociacionesreligiosas.gob.mx'.
+        * Starts with 'Pàgina'.
+        * Is a number.
+        * Is blank.
+    * Otherwise, write down the current line and the current religious group on the clean data sheet.
+* **Step 4:** Return the cleaned data.
+
+
+  
+
