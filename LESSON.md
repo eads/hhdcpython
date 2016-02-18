@@ -187,4 +187,11 @@ There are three key patterns in the data to be aware of.
 
 1. The name of the religious group always precedes the names of the registered members.
 2. The line with the name of the group always starts with the letters `SGAR` followed by some letters, numbers, and a space before the name of the group.
-3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says 
+3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says "Nombre completo", a line that says "Total", and a line with a number corresponding to the total.
+
+These patterns pretty much spell out what needs to happen.
+
+* Read each line
+  * If the line starts with SGAR, get the stuff after the space and write it down as the current religious group.
+  * If the line matches any of the junk you identified, skip it.
+  * If none of the conditions above are met, the line must be a name. Write down the name along with the current religious group.
