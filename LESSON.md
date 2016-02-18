@@ -230,8 +230,37 @@ It might seem obvious, but the final step is to give back the cleaned data. You 
     * Otherwise, write down the current line and the current religious group on the clean data sheet. Take care to fix the capitalization of the name so it is more readable.
 * **Step 4:** Return the cleaned data.
 
-## Turning it into code
+## From pseudo-code to Python code
 
-At this point, you have what programmers call "pseudo code". It isn't real code, but it does systematically describe the process your program needs to use. That's important. Once you know what you're trying to do, it will be a lot easier to ask Google (or your friends and colleagues) for help. 
+At this point, you have what programmers call "pseudo-code". It isn't real code that a computer can understand, but it does systematically describe the process your program needs to use. That's important. Once you know what you're trying to do, it will be a lot easier to ask Google (or your friends and colleagues) for help. 
 
-Eventually, you probably won't need pseudo code when you process data.
+Eventually, you probably won't need to write pseudo-code when you process data. But it *never* hurts to describe the patterns in your input data or your desired output. I still do this for just about any relatively complex task I need to tackle and it's absolutely essential for the trickier data cleaning and parsing tasks that come up from time to time.
+
+## Where do I start writing the Python code?
+
+As mentioned above, your colleague left you a place to start. Before you start to sing my praises, remembers that's both a blessing and a curse. It's useful because it means there's some work and structure you don't have to worry about. It can be frustrating to try to figure out what's going on and how to change it to suit your needs.
+
+First, you need to take a look at the overall structure of the [processing script](process.py). Here's a modified version of file with most of the code stripped away so you can see the structure better:
+
+```
+def process():
+   output = list()
+   # processing code
+   return output
+
+if __name__ == '__main__':
+   output = process()
+   print(output)
+```
+
+The first part, `def process():`, defines a function. A function is sort of like a little machine that takes some action. In this case, that's processing the data, which is why the function is named `process`. Note that you could have named the function just about anything you want (provided it doesn't include whitespace), but giving the function a weird name like `bojangles` would be like naming a bicycle "Labrador Retriever" -- confusing to everyone.
+
+In all events, everything that is indented underneath `def process():` is part of that function. The function ends when there's a line that begins with `return` or a non-idented line.
+
+The second part, `if __name__ == '__main__':` looks really weird. That's because it really weird. To be honest, I'm not really sure why the people who made Python thought that was a cool pattern; it certainly took me a long time to understand it. 
+
+But just trust me on this one. Everything indented underneath that line will be executed when you run the script, either via PythonAnywhere's "run" button or from the command line (something we might be able to cover later).
+
+That's why there's a line that reads `output = process()` in that section. It can help to read that line right-to-left. On the right side, you're calling the function called `process()` -- you're asking the little machine to do something for you. On the left side, you're assigning the output of the `process()` function to a variable called `output`. 
+
+Just like the function named `process`, you *could* call the variable just about anything you want. But in programming, clarity trumps creativity. 
