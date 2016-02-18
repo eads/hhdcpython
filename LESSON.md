@@ -107,7 +107,7 @@ Asociaciones Religiosas
 
 Hey, there's the first data processing step: Skip the gunk at the top.
 
-Since you need to be very clear in your instructions, you should put a finer point on it: Skip the first 9 lines of the file.
+Since you need to be very clear in your instructions, you should put a finer point on it: Since there are exactly 9 lines of junk, skip the first 9 lines of the file.
 
 * **Step 0:** Open the file.
 * **Step 1:** Skip the first 9 lines of the file.
