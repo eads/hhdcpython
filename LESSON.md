@@ -439,3 +439,15 @@ Edit the file to add a new `trimmed_data` variable and loop over *that*.
 	
     	...
 ```
+
+Now you can scratch step 1 off the list as well. 
+
+* ~~**Step 1:** Skip the first 9 lines of the file.~~
+
+That leaves step 3, where the real action happens. Before you dig in, might as well run the script again. What do you expect to see compared to the first time you ran it? 
+
+If you said "the same dang thing but without the first nine lines" then you're absolutely correct! 
+
+*Note*: As I write code, I tend to make these sorts of small changes, think about what I expect to see in the output, and then run the program to make sure the output is in fact what I expected. If it isn't, then either my expectation is wrong or my code is wrong -- and it's usually my code.
+
+
