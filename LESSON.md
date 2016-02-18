@@ -452,7 +452,53 @@ As I write code, I tend to make these sorts of small changes, think about what I
 
 On to step 3, or at least a first pass at it!
 
-Maybe you understand the `line.strip()` line, maybe you don't. But it seems important so you should probably keep it. You should take a moment to understand it, though, because it pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
+Let's walk through what's there more closely and then modify it.
+
+First is the loop itself:
+
+```python
+    for line in trimmed_data:
+```
+
+Everything "inside" the loop (e.g. indented after this line of code) will operate on each element of the `trimmed_data` list. `line` is just a temporary name for the element being processed. Like function names and variable names, it can be anything you want. What's important here is consistency: Inside the loop, `line` will always refer to the line from the source file that's being processed.
+
+---
+
+**Aside**: If that makes sense, go ahead and skip this note. But here's an example that might help. Executing:
+
+```python
+cities = ['NYC', 'Chicago', 'Detroit']
+for city in cities:
+    print(city)
+```
+
+will print:
+
+```
+NYC
+Chicago
+Detroit
+```
+
+This code is, despite using `GO_SEAHAWKS_WHOO` instead of `city` as the loop variable, will do the exact same thing:
+
+```python
+cities = ['NYC', 'Chicago', 'Detroit']
+for GO_SEAHAWKS_WHOO in cities:
+    print(GO_SEAHAWKS_WHOO)
+```
+
+This code, however, will fail with an error:
+
+```python
+cities = ['NYC', 'Chicago', 'Detroit']
+for city in cities:
+    print(GO_SEAHAWKS_WHOO)
+```
+
+---
+
+though, because it pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
 
 ```python
     for line in trimmed_data:
