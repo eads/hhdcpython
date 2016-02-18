@@ -464,15 +464,15 @@ Everything "inside" the loop (e.g. indented after this line of code) will operat
 
 ---
 
-**Aside**: If that makes sense, go ahead and skip this note. If not, here's an example that might help. Executing:
+**Aside**: If that makes sense, go ahead and skip this note. If not, here's an example that might help. Execute the following code in a Python console:
 
 ```python
-cities = ['NYC', 'Chicago', 'Detroit']
-for city in cities:
-    print(city)
+>>> cities = ['NYC', 'Chicago', 'Detroit']
+>>> for city in cities:
+>>>    print(city)
 ```
 
-will print:
+This will yield:
 
 ```
 NYC
@@ -483,9 +483,12 @@ Detroit
 This code is, despite using `GO_SEAHAWKS_WHOO` instead of `city` as the loop variable, will do the exact same thing:
 
 ```python
-cities = ['NYC', 'Chicago', 'Detroit']
-for GO_SEAHAWKS_WHOO in cities:
-    print(GO_SEAHAWKS_WHOO)
+>>> cities = ['NYC', 'Chicago', 'Detroit']
+>>> for GO_SEAHAWKS_WHOO in cities:
+>>>    print(GO_SEAHAWKS_WHOO)
+NYC
+Chicago
+Detroit
 ```
 
 This code, however, will fail with an error:
