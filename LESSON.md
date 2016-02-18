@@ -448,6 +448,8 @@ That leaves step 3, where the real action happens. Before you dig in, might as w
 
 If you said "the same dang thing but without the first nine lines" then you're absolutely correct! 
 
-*Note*: As I write code, I tend to make these sorts of small changes, think about what I expect to see in the output, and then run the program to make sure the output is in fact what I expected. If it isn't, then either my expectation is wrong or my code is wrong -- and it's usually my code.
+*Note*: As I write code, I tend to make these sorts of small changes, think about what I expect to see in the output, and then run the program to make sure the output is in fact what I expected. If it isn't, then either my expectation is wrong or my code is wrong -- and it's usually my code. Running your code early, often, comparing what you expect with what actually happens is a nice recipe for learning and effective development.
+
+
 
 
