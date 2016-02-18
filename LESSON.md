@@ -522,9 +522,10 @@ You're finally in the belly of the data-cleaning beast. If you'll recall, the on
         # If the line is not empty, add it to the output
         if line.startswith('SGAR'):
             line_parts = line.split(' ', 1)
+            identifier = line_parts[0]
             group_name = line_parts[1]
         elif line != '':
-            output_list.append([group_name, line])
+            output_list.append([group_name, identifier, line])
 ```
 
 
