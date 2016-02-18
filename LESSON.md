@@ -280,7 +280,7 @@ In all events, the key idea to keep in mind is that the function is where you pu
 
 Finally, did you notice the lines that start with `#` or multiple-line blocks that start and end with `"""`? Those are comments, which don't mean anything in terms of instructing the computer; they are simply notes to yourself or others who might use the code.
 
-## Where do I start?
+## Started at the bottom... 
 
 You might think you want to start at the top, but that's pretty rarely the case. The first step, for the moment, is to modify the section at the bottom to give you more useful information about what the heck is actually going on. Then you can start editing the `process()` function to crunch the data.  
 
