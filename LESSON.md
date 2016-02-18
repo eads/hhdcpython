@@ -531,7 +531,7 @@ You're finally in the belly of the data-cleaning beast. If you'll recall, the on
             output_list.append([group_name, identifier, line])
 ```
 
-Now, your code checks to see if the line starts with SGAR. If it does, you'll need to do some processing magic. The `split()` method turns a string into a list but "splitting" on a given character, like a space or comma. The first argument to the method is a separator (`' '` in our case), and the second argument specifies how many times to apply the split before stopping. 
+Now, your code checks to see if the line starts with SGAR. If it does, you'll need to do some processing magic. The `split()` method turns a string into a list by "splitting" on a given character, like a space or comma. The first argument to the method is the separator (`' '` in our case), and the second argument specifies how many times to apply the split before stopping. 
 
 ---
 
