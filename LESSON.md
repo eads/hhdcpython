@@ -319,4 +319,6 @@ if __name__ == '__main__':
 
 Sweet! That's a little easier to read, and is going to provide you with much more valuable feedback when you run your program.
 
-Try running it now to see what happens.
+Try running it now to see what happens. You should see a very lightly processed version of the original data, minus blank lines. This will help give you some insight into what's happening in the `process()` function currently.
+
+
