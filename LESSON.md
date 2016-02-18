@@ -323,7 +323,7 @@ Try running it now to see what happens. You should see a very lightly processed 
 
 ## ...Now we're processing
 
-Now, take a look at the (mostly useless) processing function that's here for you to modify:
+Now, take a look at the processing function that's here for you to modify. It doesn't seem very useful just yet, but at least it takes care of a few of the steps from your pseudo-code:
 
 ```python
 def process_data():
@@ -354,4 +354,11 @@ def process_data():
     return output_list
 ```
 
+The first significant lines of the function are:
 
+```python
+    # Make an empty list to hold the processed data.
+    output_list = list()
+```
+
+Where have you seen that before? Oh yeah, it was one of the steps in processing the data! Not quite in same order as the pseudo-code, but the first few steps could really be in any order -- just like in real life, it doesn't matter if you open the file before or after you get out a pad of paper to record the cleaned data, it just matters that you do make sure you do both before cleaning the data.
