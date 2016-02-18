@@ -71,7 +71,7 @@ This is what you hope to take to your colleague before she needs to file her sto
 
 ---
 
-## Writing some pseudo-code
+## Describe how you're going to process the data
 
 First, find a partner to work with. Pair programming is, paradoxically, often more efficient than working in isolation. 
 
