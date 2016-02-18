@@ -498,7 +498,7 @@ for city in cities:
 
 ---
 
-though, because it pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
+The next bit of code, `line = line.strip()` pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
 
 ```python
     for line in trimmed_data:
