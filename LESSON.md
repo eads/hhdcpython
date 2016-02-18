@@ -422,4 +422,23 @@ Excellent! You can scratch a few items off the list:
 
 Even though there's code in place to read the file line-by-line, without skipping the first lines of the file and applying all that complicated logic, we can't really say we've accomplished step 3.
 
+The first thing you need to do is skip the first 9 lines of the file. Helpfully, the file as been loaded a list -- each element of the list corresponds to a line in the file. Because the data is a list, you can loop over it. You can also use Python's handy "slice" syntax. To slice off the first 9 items of the list, you can do something like `mylist[9:]`.
 
+Edit the file to add a new `trimmed_data` variable and loop over *that*.
+
+```python
+    # Make an empty list to hold the processed data.
+    output_list = list()
+
+    # Open the data file
+    with open(HHDC_DATA_FILE) as datafile:
+        data = datafile.read().splitlines()
+
+	trimmed_data = data[9:]
+
+    # Loop over each line of the data file. Each time the loop runs, the current
+    # line is assigned to a variable called `line`.
+    for line in trimmed_data:
+	
+    	...
+```
