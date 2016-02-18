@@ -244,7 +244,7 @@ If I understand enough concepts to get something working, even if I don't unders
 
 If you're one of those people who needs to and can understand a system comprehensively before diving in, this lesson probably isn't for you (and I'm insanely jealous -- how do you do it?!?!). This lesson is for you if you like to make things that work, no matter how rickety, with limited knowledge and clever Googling, and build your skills through practice.
 
-## Where do I start writing the Python code?
+## Reading the structure of the script
 
 As mentioned above, your colleague left you a place to start. Before you start to sing your colleague's praises (I *do* appreciate the flattery), remember that's both a blessing and a curse. It's useful because it means there's some work and structure you don't have to worry about. It can be frustrating to try to figure out what's going on and how to change it to suit your needs.
 
@@ -252,6 +252,9 @@ First, you need to take a look at the overall structure of the [processing scrip
 
 ```
 def process():
+   """
+   Process the data
+   """
    output = list()
    # processing code
    return output
@@ -274,4 +277,45 @@ That's why there's a line that reads `output = process()` in that section. It ca
 Just like the function named `process`, you *could* call the variable just about anything you want. But in programming, clarity trumps creativity. (Tangentially, keeping track of stuff that *you* name, versus stuff that is just built-in, is one of the great challenges and confusing parts of programming for newcomers.)
 
 In all events, the key idea to keep in mind is that the function is where you put the processing code. The `__name__ == '__main__'` block is where you execute the processing code and see what it did.
+
+Finally, did you notice the lines that start with `#` or multiple-line blocks that start and end with `"""`? Those are comments, which don't mean anything in terms of instructing the computer; they are simply notes to yourself or others who might use the code.
+
+## Where do I start?
+
+You might think you want to start at the top, but that's pretty rarely the case. The first step, for the moment, is to modify the section at the bottom to give you more useful information about what the heck is actually going on. Then you can start editing the `process()` function to crunch the data.  
+
+Here's what that code looks like now:
+
+```
+if __name__ == '__main__':
+    # Print start message.
+    print('It works! Running `process_data()`')
+
+    # Assign return values of `process_data()` function to `output` variable.
+    output = process_data()
+
+    # Print the `output` variable.
+    print('Here is the first line of output data:')
+    print('    {0}'.format(output[0]))
+    print('See you in class!')
+
+    # Print that we're done.
+    print('Done.')
+```
+
+Edit the code to cut out some of the example debugging message and to print the whole output variable:
+
+```
+if __name__ == '__main__':
+    # Assign return values of `process_data()` function to `output` variable.
+    output = process_data()
+
+    # Print the `output` variable.
+    print('Output of process_data function:')
+    print(output)
+```
+
+Sweet! That's a little easier to read, and is going to provide you with much more valuable feedback when you run your program.
+
+
 
