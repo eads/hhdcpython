@@ -271,4 +271,7 @@ But just trust me on this one. Everything indented underneath that line will be 
 
 That's why there's a line that reads `output = process()` in that section. It can help to read that line right-to-left. On the right side, you're calling the function called `process()` -- you're asking the little machine to do something for you. On the left side, you're assigning the output of the `process()` function to a variable called `output`. 
 
-Just like the function named `process`, you *could* call the variable just about anything you want. But in programming, clarity trumps creativity. 
+Just like the function named `process`, you *could* call the variable just about anything you want. But in programming, clarity trumps creativity. (Tangentially, keeping track of stuff that *you* name, versus stuff that is just built-in, is one of the great challenges and confusing parts of programming for newcomers.)
+
+In all events, the key idea to keep in mind is that the function is where you put the processing code. The `__name__ == '__main__'` block is where you execute the processing code and see what it did.
+
