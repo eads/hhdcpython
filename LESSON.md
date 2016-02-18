@@ -61,7 +61,7 @@ Or, to write it more generally:
 <Clean church name>, <Clean member name>
 ```
 
-This is what you hope to take to your colleague before her filing deadline.
+This is what you hope to take to your colleague before she needs to file her story.
 
 ---
 
