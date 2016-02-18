@@ -454,7 +454,7 @@ On to step 3, or at least a first pass at it!
 
 Maybe you understand the `line.strip()` line, maybe you don't. But it seems important so you should probably keep it. You should take a moment to understand it, though, because it pops up in just about every data cleaning scenario. `"   Hacks/Hackers DC ".strip()` returns `"Hacks/Hackers DC"`. The `strip()` method simply removes any whitespace characters from the beginning and end of a string.
 
-```
+```python
     for line in trimmed_data:
 
         # Remove any whitespace characters from beginning and end of line
