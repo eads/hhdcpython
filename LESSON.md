@@ -555,4 +555,8 @@ Perfect! Element 0 of the returned list is the identifer, and element 1 is the n
 
 Like `strip()`, you'll find yourself using `split()` all the time when doing data cleaning work.
 
+You should now run this code. The output won't be perfect, but you'll see that you're getting pretty warm. You should be getting a lot of rows that are valid, but also a lot of junk. 
+
+That's good news -- it means you just need to improve the filter that removes the junk rows. 
+
 (to be continued)
