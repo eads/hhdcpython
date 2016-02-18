@@ -236,9 +236,17 @@ At this point, you have what programmers call "pseudo-code". It isn't real code 
 
 Eventually, you probably won't need to write pseudo-code when you process data. But it *never* hurts to describe the patterns in your input data or your desired output. I still do this for just about any relatively complex task I need to tackle and it's absolutely essential for the trickier data cleaning and parsing tasks that come up from time to time.
 
+This is the part where I introduce you to my patented pedagogical technique, tested with many an aspiring coder (just ask NPR's interns), in which I dangle you out the window by your ankles and then let go! 
+
+Ok, I'm mostly kidding. What I am going to do is introduce a lot of programming concepts, but narrowly or shallowly. Some people want to understand the whole system before they get started. In my experience, that works great for a small number of people and rather poorly for most people (myself included). For me, there's a back-and-forth, practice-based process. 
+
+If I understand enough concepts to get something working, even if I don't understand all of it, that's perfect. As I keep working, the concepts start to deepen and become more real, and then I can keep adding new wrinkles to my practice and taking on new challenges.
+
+If you're one of those people who needs to and can understand a system comprehensively before diving in, this lesson probably isn't for you (and I'm insanely jealous -- how do you do it?!?!). This lesson is for you if you like to make things that work, no matter how rickety, with limited knowledge and clever Googling, and build your skills through practice.
+
 ## Where do I start writing the Python code?
 
-As mentioned above, your colleague left you a place to start. Before you start to sing my praises, remembers that's both a blessing and a curse. It's useful because it means there's some work and structure you don't have to worry about. It can be frustrating to try to figure out what's going on and how to change it to suit your needs.
+As mentioned above, your colleague left you a place to start. Before you start to sing your colleague's praises (I *do* appreciate the flattery), remember that's both a blessing and a curse. It's useful because it means there's some work and structure you don't have to worry about. It can be frustrating to try to figure out what's going on and how to change it to suit your needs.
 
 First, you need to take a look at the overall structure of the [processing script](process.py). Here's a modified version of file with most of the code stripped away so you can see the structure better:
 
