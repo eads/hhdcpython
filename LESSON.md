@@ -427,9 +427,6 @@ The first thing you need to do is skip the first 9 lines of the file. Helpfully,
 Edit the file to add a new `trimmed_data` variable and loop over *that*.
 
 ```python
-    # Make an empty list to hold the processed data.
-    output_list = list()
-
     # Open the data file
     with open(HHDC_DATA_FILE) as datafile:
         data = datafile.read().splitlines()
