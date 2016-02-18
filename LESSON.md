@@ -375,7 +375,7 @@ The next few lines correspond nicely to the pseudo-code from earlier as well:
         data = datafile.read().splitlines()
 ```
 
-You don't have to entirely understand what's going on these lines to see that there's I've assigned the contents of the data file to a variable called `data`. Make a mental note of this -- if you want to change the data file, you'll need to remember it -- but move on. You've got a variable called `data` to play with and unless you run into problems, how you got it doesn't matter that much.
+You don't have to entirely understand what's going on these lines to see that that I've assigned the contents of the data file to a variable called `data`. Make a mental note of this -- if you want to change the data file, you'll need to remember it -- but move on. You've got a variable called `data` to play with and unless you run into problems, how you got it doesn't matter that much.
 
 
 
