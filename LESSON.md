@@ -511,4 +511,20 @@ The next bit of code, `line = line.strip()` pops up in just about every data cle
             output_list.append(line)
 ```
 
+You're finally in the belly of the data-cleaning beast. If you'll recall, the once you're looking at the data line by line, the first test you need to run is if the line starts with "SGAR". How might you do this in Python? You'll need to rewrite a bit more code this time to make it all work:
+
+```python
+    for line in trimmed_data:
+
+        # Remove any whitespace characters from beginning and end of line
+        line = line.strip()
+
+        # If the line is not empty, add it to the output
+        if line.startswith('SGAR'):
+            line_parts = line.split(' ', 1)
+            group_name = line_parts[1]
+        elif line != '':
+            output_list.append([group_name, line])
+```
+
 
