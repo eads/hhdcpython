@@ -250,7 +250,7 @@ As mentioned above, your colleague left you a place to start. Before you start t
 
 First, you need to take a look at the overall structure of the [processing script](process.py). Here's a modified version of file with most of the code stripped away so you can see the structure better:
 
-```
+```python
 def process():
    """
    Process the data
@@ -288,7 +288,7 @@ Go ahead and open the file called process.py via the files tab on Python Anywher
 
 Here's what that code at the bottom looks like now:
 
-```
+```python
 if __name__ == '__main__':
     # Print start message.
     print('It works! Running `process_data()`')
@@ -307,7 +307,7 @@ if __name__ == '__main__':
 
 Edit the code to cut out some of the example debugging message and to print the whole output variable:
 
-```
+```python
 if __name__ == '__main__':
     # Assign return values of `process_data()` function to `output` variable.
     output = process_data()
@@ -320,5 +320,38 @@ if __name__ == '__main__':
 Sweet! That's a little easier to read, and is going to provide you with much more valuable feedback when you run your program.
 
 Try running it now to see what happens. You should see a very lightly processed version of the original data, minus blank lines. This will help give you some insight into what's happening in the `process()` function currently.
+
+## ...Now we're processing
+
+Now, take a look at the (mostly useless) processing function that's here for you to modify:
+
+```python
+def process_data():
+    """
+    Process data.
+    You must modify this function to shape the data the way you need.
+    """
+
+    # Make an empty list to hold the processed data.
+    output_list = list()
+
+    # Open the data file
+    with open(HHDC_DATA_FILE) as datafile:
+        data = datafile.read().splitlines()
+
+    # Loop over each line of the data file. Each time the loop runs, the current
+    # line is assigned to a variable called `line`.
+    for line in data:
+
+        # Remove any whitespace characters from beginning and end of line
+        line = line.strip()
+
+        # If the line is not empty, add it to the output
+        if line != '':
+            output_list.append(line)
+
+    # Return the processed data
+    return output_list
+```
 
 
