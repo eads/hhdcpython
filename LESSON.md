@@ -464,7 +464,7 @@ Everything "inside" the loop (e.g. indented after this line of code) will operat
 
 ---
 
-**Aside**: If that makes sense, go ahead and skip this note. But here's an example that might help. Executing:
+**Aside**: If that makes sense, go ahead and skip this note. If not, here's an example that might help. Executing:
 
 ```python
 cities = ['NYC', 'Chicago', 'Detroit']
