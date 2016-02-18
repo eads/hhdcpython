@@ -284,7 +284,9 @@ Finally, did you notice the lines that start with `#` or multiple-line blocks th
 
 You might think you want to start at the top, but that's pretty rarely the case. The first step, for the moment, is to modify the section at the bottom to give you more useful information about what the heck is actually going on. Then you can start editing the `process()` function to crunch the data.  
 
-Here's what that code looks like now:
+Go ahead and open the file called process.py via the files tab on Python Anywhere.
+
+Here's what that code at the bottom looks like now:
 
 ```
 if __name__ == '__main__':
@@ -317,5 +319,4 @@ if __name__ == '__main__':
 
 Sweet! That's a little easier to read, and is going to provide you with much more valuable feedback when you run your program.
 
-
-
+Try running it now to see what happens.
