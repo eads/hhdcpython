@@ -408,7 +408,7 @@ Excellent! Let's scratch a few items off our list:
 * ~~**Step 0:** Open the file.~~
 * **Step 1:** Skip the first 9 lines of the file.
 * ~~**Step 2:** Prepare a place to write down the clean data.~~
-* **Step 3:** Read the file, line by line:
+* ~~**Step 3:** Read the file, line by line:~~
     * If the line starts with SGAR, write down the name after the first space as the current religious group. Take care to fix the capitalization of the group's name so it is more readable.
     * Skip the line if it:
         * Says 'Total'.
