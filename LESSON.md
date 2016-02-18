@@ -545,3 +545,5 @@ Getting close, but you only want to split the identifier and the name of the rel
 ```
 
 Perfect! Element 0 of the returned list is the identifer, and element 1 is the name of the religious group. 
+
+Like `strip()`, you'll find yourself using `split()` all the time when doing data cleaning work.
