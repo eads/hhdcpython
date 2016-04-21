@@ -10,11 +10,11 @@ If you need to do this kind of work, you're probably going to be spending a lot 
 
 ## The problem
 
-A reporter at your publication would like you to clean up some data for a story about fringe religious groups in Mexico. She doesn't need anything fancy, just an overall count of the number of groups in the country and a count of the number of members per group.
+A reporter at your publication would like you to clean up some data for a story about fringe religious groups in Mexico. She doesn't need anything fancy, just an overall count of the number of groups in the country and a count of the number of leaders per group.
 
 The good news is that Mexican government has collects and releases data about known religious groups. The not-so-good news is that instead of a friendly CSV file that you could import into Excel, the data is locked up in a [1,964 page PDF document](http://www.asociacionesreligiosas.gob.mx//work/models/AsociacionesReligiosas/pdf/Numeralia/MC_por_SGAR.pdf).
 
-The data includes the name of each religion followed by names of known members of the group. 
+The data includes the name of each religion followed by names of known leaders of the group. 
 
 You could try to copy and paste and manually clean up the data, but that's a lot of work. Who wants to do a lot of work? More importantly, you'll have even *more* work if you make a mistake, and if the government releases a new list, you'll have more work still. But if you write some code to clean the data, you can repeatedly process the data. With a little code, mistakes are no longer time-killers. If new data is released, you can simply swap out the old data for the new and re-run your analysis.
 
@@ -185,9 +185,9 @@ Página 1
 
 There are three key patterns in the data to be aware of. 
 
-1. The name of the religious group always precedes the names of the registered members.
+1. The name of the religious group always precedes the names of the registered leaders.
 2. The line with the name of the group always starts with the letters `SGAR` followed by some letters, numbers, and a space before the name of the group.
-3. In addition to the names of the members, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says "Nombre completo", a line that says "Total", empty lines, and a line with a number corresponding to the total.
+3. In addition to the names of the leaders, there's some junk strewn about the file: The agency's URL, the page number, a header before the names that says "Nombre completo", a line that says "Total", empty lines, and a line with a number corresponding to the total.
 
 These patterns pretty much spell out what needs to happen. For each line:
 
