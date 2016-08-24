@@ -19,9 +19,17 @@ You'll need to sign up with a couple of services to complete this job:
 
 ## Getting set up for the first time
 
-At least your charmingly cryptic co-worker David left you a place to start: A git repository with some data and the bones of a script to process it.
+At least your charmingly cryptic co-worker David left you a place to start: A git repository with some data and the bones of a script to process it. So that's where you'll start.
 
-Of course, David was only following the practices established for any small data project at our company.
+"Wait, isn't that cheating?" you may be asking. Sure, it's cheating -- but only insofar as "programming languages" are "cheating". Creating abstraction to make doing work easier is a foundational principle of working with computers and lots of other technology aside. 
+
+Cheat away! Lots of people think they need to know everything about a programming language to do anything, and it just doesn't work like that. You only need to know enough to solve your problem -- and if someone is already 70% of the way there and willing to share, take their help. 
+
+And remember, they're only 70% of the way there because people have been developing languages like Python for a couple of decades. Python only happened because other people have been developing C, the language Python is based on, for about four decades. None of this would have been possible without the invention of little tiny processing chips six decades ago. One could go on like this forever.
+
+In the course of solving your problem, you'll probably learn something new. Unless you're the long-prophesied immaculate coder, it usually works like that.
+
+In the end, by giving you a template to start from, David was only following the practices established for any small data project at our company: start with a template that takes care of common problems in your daily work so you can focus on the problem at hand.
 
 ### Fork the code
 
